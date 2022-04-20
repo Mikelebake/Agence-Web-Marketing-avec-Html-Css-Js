@@ -1,9 +1,8 @@
 :root{
-    --orange:#e67e22;
     --black:#333;
     --border:.1rem solid rgba(0,0,0,.2);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
-    --seconde-color: #eee;
+    --seconde-color: rgb(0, 0, 0);
 }
 
 *{
@@ -213,7 +212,6 @@ section{
 .container-articles .posts-container .post
 {
     width:100%;
-    padding:2rem;
     background:#fff;
     border:var(--border);
     border-radius: .5rem;
@@ -224,23 +222,32 @@ section{
 .container-articles .posts-container .post .image
 {
     width:100%;
-    border-radius: .5rem;
     object-fit: cover;
 }
 
 .container .posts-container .post .date,
 .container-articles .posts-container .post .date
 {
-    padding-top: 2rem;
-    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 
 .container .posts-container .post .title,
 .container-articles .posts-container .post .title
 {
-    padding-top: 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 2.5rem;
     color:var(--black);
+}
+
+.container .posts-container .category
+{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--seconde-color);
+    text-transform: capitalize;
 }
 
 .container .posts-container .post .text,
@@ -249,7 +256,7 @@ section{
     color:var(--black);
     font-size: 1.7rem;
     line-height: 1.7;
-    padding:1rem 0;
+    padding: 0.5rem 1rem;
     text-align: justify;
 }
 
@@ -258,9 +265,9 @@ section{
 {
     border-top: var(--border);
     margin-top: .5rem;
-    padding-top: 1.5rem;
-    display: flex;
-    align-items: center;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background: #eee;
 }
 
 .container .posts-container .links .user,
@@ -396,10 +403,11 @@ section{
     margin-bottom: 1.5rem;
 }
 
-.container .sidebar .box .title{
-    padding:1.5rem;
+.container .sidebar .box .title
+{
+    padding:1rem;
     font-size: 2rem;
-    color:var(--black);
+    color:#fff;
     background:var(--seconde-color);
     text-transform: capitalize;
 }
