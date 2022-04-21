@@ -3,6 +3,7 @@
     --border:.1rem solid rgba(0,0,0,.2);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
     --seconde-color: rgb(0, 0, 0);
+    --third-color: #eee;
 }
 
 *{
@@ -190,7 +191,7 @@ section{
 .banner .content i,
 .banner .content span{
     font-size: 1.6rem;
-    color: var(--seconde-color);
+    color: var(--third-color);
 }
 
 .container-articles{
@@ -216,6 +217,22 @@ section{
     border:var(--border);
     border-radius: .5rem;
     margin-bottom: 1.5rem;
+}
+
+.container .posts-container .poste{
+    width:100%;
+    padding: 1.5rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-container .poste .text{
+    color:var(--black);
+    font-size: 1.7rem;
+    line-height: 1.7;
+    text-align: justify;
 }
 
 .container .posts-container .post .image,
@@ -302,7 +319,7 @@ section{
 }
 
 .container .posts-container .com-u{
-    background-color: var(--seconde-color);
+    background-color: var(--third-color);
     padding: 10px;
     border-radius: 10px;
     width: 100%;
