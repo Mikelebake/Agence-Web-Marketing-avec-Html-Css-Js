@@ -25,10 +25,6 @@ html{
     scroll-padding-top: 6rem;
 }
 
-body{
-    background-color: var(--black);
-}
-
 section{
     padding:2rem 7%;
 }
@@ -194,19 +190,154 @@ section{
     color: var(--third-color);
 }
 
-.container-articles{
+.entete{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px auto;
+}
+
+/* debut container de toutes les sections  */
+
+.apropos,
+.services,
+.confiance,
+.clients{
+    display: flex;
+    flex-direction: column;
+}
+
+/* fin container de toutes les sections  */
+
+/* debut apropos de la page index  */
+
+.apropos .content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
-    background:#eee;
+    padding: 2rem;
 }
 
+.apropos .content .box{
+    padding: 1rem;
+}
+
+.apropos .box .texte{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.apropos .content .box img{
+    width: 100%;
+}
+
+.apropos .content .suit{
+    display: flex;
+    flex-direction: column;
+}
+
+.apropos .content a{
+    background-color: var(--third-color);
+    color: var(--seconde-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.apropos .content a:hover{
+    background-color: var(--seconde-color);
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+/* fin apropos de la page index  */
+
+/* debut services de la page index  */
+
+.service{
+    display: flex;
+    flex-direction: column;
+}
+.service .gBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding: 2rem;
+}
+
+.service .box{
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.service .box:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.541);
+}
+
+.service .box img{
+    width: 100px;
+}
+
+.service .box h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.service .box p{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.service .box a{
+    font-size: 1.7rem;
+    padding: 1rem;
+    background: var(--third-color);
+    color: var(--seconde-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.service .box a:hover{
+    background: var(--seconde-color);
+    color: #fff;
+}
+
+/* fin services de la page index  */
+
+/* debut confiance de la page index  */
+
+.confiance .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding: 2rem;
+}
+.confiance .content .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:10rem;
+    padding: 2rem;
+}
+
+.confiance .content .box img
+{
+    width: 100px;
+}
+
+/* fin confiance de la page index  */
 
 .container{
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     gap:1.5rem;
     background:rgba(255, 255, 255, 0.966);
+}
+
+.container-articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    background:#eee;
 }
 
 .container .posts-container .post,
