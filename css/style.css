@@ -842,6 +842,10 @@ section{
     color: #fff;
 }
 
+.mail .content .box i.fa{
+    width: 100px;
+}
+
 /* fin de la nsection mail */
 
 /* debut de la secftion formulaire de contact */
@@ -957,6 +961,14 @@ section{
 
     .container .posts-container .post .image{
         height: 30rem;;
+    }
+
+    .formulaire{
+        flex-direction: column;
+    }
+
+    .formulaire .content{
+        width: 100%;
     }
 
 }
