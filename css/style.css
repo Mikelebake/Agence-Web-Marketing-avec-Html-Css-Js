@@ -201,7 +201,6 @@ section{
 
 .apropos,
 .services,
-.confiance,
 .clients{
     display: flex;
     flex-direction: column;
@@ -306,25 +305,22 @@ section{
 
 /* debut confiance de la page index  */
 
+
 .confiance .content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-    padding: 2rem;
-}
-.confiance .content .box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:10rem;
-    padding: 2rem;
+    width: 400px;
 }
 
-.confiance .content .box img
-{
-    width: 100px;
+.confiance .content .box{
+    display: flex;
 }
+
+.confiance .content .boxImage img{
+    width: 250px;
+}
+
 
 /* fin confiance de la page index  */
+
 
 .container{
     display: grid;
@@ -334,10 +330,13 @@ section{
 }
 
 .container-articles{
+    background:#eee;
+}
+
+.container-articles .content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
-    background:#eee;
 }
 
 .container .posts-container .post,
@@ -798,6 +797,90 @@ section{
     padding:2.5rem 1rem;
     text-align: center;
 }
+
+
+
+
+/* style des autres pages du site */
+
+/* debut de la page apropos */
+
+
+
+/* fin de la page apropos */
+
+/* debut de la page services */
+
+
+
+/* fin de la page services */
+
+/* debut de la page contact */
+
+/* debut de la section mail */
+
+.mail .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.mail .content .box{
+    padding: 1.5rem 0;
+    text-align: center;
+    background:#eee;
+    border-radius: 10px;
+}
+
+.mail .content .box h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.mail .content .box:hover{
+    background-color: var(--seconde-color);
+    color: #fff;
+}
+
+/* fin de la nsection mail */
+
+/* debut de la secftion formulaire de contact */
+
+.formulaire{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulaire .content{
+    width: 45%;
+}
+
+.formulaire .content img{
+    width: 100%;
+}
+
+.formulaire .content form input,
+.formulaire .content form textarea
+{
+    padding: 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.formulaire .content form input[type='submit']:hover{
+    background-color: var(--black);
+    color: #eee;
+    font-weight: bold;
+}
+
+
+
+/* fin de la secftion formulaire de contact */
+
+/* fin de la page contact */
 
 
 
