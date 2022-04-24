@@ -580,9 +580,32 @@ section{
 
 .container .sidebar .box .about p{
     color:var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     padding:1rem;
+}
+
+.container .sidebar .box .about form{
+    width: 100%;
+    margin: auto;
+}
+
+.container .sidebar .box .about form input{
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--seconde-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container .sidebar .box .about form input[type="submit"]{
+    background: var(--third-color);
+    cursor: pointer;
+}
+
+.container .sidebar .box .about form input[type="submit"]:hover{
+    background: var(--seconde-color);
+    color: #fff;
 }
 
 .container .sidebar .box .about .follow{
