@@ -303,24 +303,7 @@ section{
 
 /* fin services de la page index  */
 
-/* debut confiance de la page index  */
-
-
-.confiance .content{
-    width: 400px;
-}
-
-.confiance .content .box{
-    display: flex;
-}
-
-.confiance .content .boxImage img{
-    width: 250px;
-}
-
-
-/* fin confiance de la page index  */
-
+/* deut de la section blog de la page index  */
 
 .container{
     display: grid;
@@ -700,6 +683,102 @@ section{
     color:#fff;
 }
 
+/* fin de la section blog de la page index  */
+
+/* debut de la section confiance */
+
+.confiance .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding: 2rem;
+}
+
+.confiance .content .box{
+    padding: 1rem;
+}
+
+.confiance .content .box .a-apropos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(/images/blog2.jpg);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    height: 50vh;
+}
+
+.confiance .content .box .a-apropos .title{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.confiance .box .texte{
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    color: var(--third-color);
+}
+
+.confiance .content .box img{
+    width: 25%;
+    margin: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+}
+
+.confiance .box img:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.952);
+}
+
+/* fin de la section confiance */
+
+/* debut de la section temoignages de la page index */
+
+.temoignages .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.temoignages .content .box{
+    border:.1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding:3rem 2rem;
+}
+
+.temoignages .content .box:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
+}
+
+.temoignages .content .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--seconde-color);
+    padding:2rem 0;
+}
+
+.temoignages .content .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.temoignages .content .box h3{
+    font-size: 2rem;
+}
+
+.temoignages .content .box .stars i{
+    font-size: 1.5rem;
+    color:var(--main-color);
+}
+
+/* fin de la section temoignages de la page index */
+
+
+/* debut de la section newsletter pour les promos */
+
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
@@ -755,6 +834,8 @@ section{
     color: var(--black);
     background-color: white;
 }
+
+/* fin de la section newsletter pour les promos */
 
 .footer{
     padding-top: 3rem;
@@ -828,13 +909,112 @@ section{
 
 /* debut de la page apropos */
 
+.aproposP .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding: 2rem;
+}
 
+.aproposP .content .box{
+    padding: 1rem;
+}
+
+.aproposP .box .texte{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.aproposP .content .box img{
+    width: 40%;
+    margin: 0.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.aproposP .content .suit{
+    display: flex;
+    flex-direction: column;
+}
+
+.aproposP .content a{
+    background-color: var(--third-color);
+    color: var(--seconde-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.aproposP .content a:hover{
+    background-color: var(--seconde-color);
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+
+.aproposP .box img:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.952);
+}
 
 /* fin de la page apropos */
 
 /* debut de la page services */
 
+.services .content1,
+.services .content2,
+.services .content3,
+.services .content4
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    padding: 2rem;
+}
 
+.services .content1 .box,
+.services .content2 .box,
+.services .content3 .box,
+.services .content4 .box
+{
+    padding: 1rem;
+}
+
+.services .box .title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.services .box .texte{
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.services .content1 .box img,
+.services .content2 .box img,
+.services .content3 .box img,
+.services .content4 .box img
+{
+    width: 100%;
+}
+
+.services .content1 a,
+.services .content2 a,
+.services .content3 a,
+.services .content4 a
+{
+    background-color: var(--third-color);
+    color: var(--seconde-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.services .content1 a:hover,
+.services .content2 a:hover,
+.services .content3 a:hover,
+.services .content4 a:hover
+{
+    background-color: var(--seconde-color);
+    color: #fff;
+    font-size: 1.7rem;
+}
 
 /* fin de la page services */
 
