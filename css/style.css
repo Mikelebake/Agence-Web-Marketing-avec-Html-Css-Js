@@ -1,7 +1,5 @@
 :root{
-    --black:#333;
-    --border:.1rem solid rgba(0,0,0,.2);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --primary-color:#333;
     --seconde-color: rgb(0, 0, 0);
     --third-color: #eee;
 }
@@ -32,7 +30,7 @@ section{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    background:var(--black);
+    background:var(--primary-color);
     color:#fff;
     border-radius: .5rem;
     padding:.9rem 3rem;
@@ -48,7 +46,7 @@ section{
     position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
-    background: var(--black);
+    background: var(--primary-color);
     box-shadow: var(--box-shadow);
     display: flex;
     color: #eee;
@@ -82,10 +80,10 @@ section{
     line-height:4.5rem;
     width:4.5rem;
     text-align: center;
-    color:var(--black);
-    background:var(--seconde-color);
+    color:var(--primary-color);
+    background:var(--third-color);
     border-radius: 50%;
-    border: 2px solid var(--seconde-color);
+    border: 2px solid var(--third-color);
     margin-left: .7rem;
     font-size: 1.7rem;
     cursor: pointer;
@@ -93,7 +91,7 @@ section{
 
 .header .icons i:hover{
     color:#fff;
-    background:var(--black);
+    background:var(--primary-color);
 }
 
 .header .search-form a{
@@ -110,7 +108,7 @@ section{
 
 .header .search-form{
     position: absolute;
-    background:var(--black);
+    background:var(--primary-color);
     border-radius: .5rem;
     display: flex;
     align-items: center;
@@ -135,7 +133,7 @@ section{
     border-radius: .5rem;
     padding:1rem;
     font-size: 1.7rem;
-    color:var(--black);
+    color:var(--primary-color);
     height: 100%;
 }
 
@@ -144,7 +142,7 @@ section{
     padding-left: 1rem;
     padding-right: .5rem;
     cursor: pointer;
-    color:var(--black);
+    color:var(--primary-color);
 }
 
 .header .search-form label:hover{
@@ -157,12 +155,22 @@ section{
 
 .banner{
     min-height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/bg.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/bg.png);
     background-size: cover;
     background-position: center;
     display: grid;
     place-items: center;
     padding-top: 8rem;
+}
+
+.bg-blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.959),rgba(0, 0, 0, 0.911)),url(../images/bg-blog.jpg);  
+    background-size: cover;
+}
+
+.bg-contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.74)),url(../images/bg-contact.jpg);  
+    background-size: cover;
 }
 
 .banner .content{
@@ -318,7 +326,6 @@ section{
 .workBx .mike
 {
     position: relative;
-    background: #4978ff;
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
@@ -388,9 +395,9 @@ section{
 
 .teamBx .member .details
 {
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -404,7 +411,7 @@ section{
 
 .teamBx .member:hover .details
 {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .teamBx .member .details h2
@@ -464,7 +471,7 @@ section{
 }
 
 .container .posts-container .poste .text{
-    color:var(--black);
+    color:var(--primary-color);
     font-size: 1.7rem;
     line-height: 1.7;
     text-align: justify;
@@ -489,7 +496,7 @@ section{
 {
     padding: 0.5rem 1rem;
     font-size: 2.5rem;
-    color:var(--black);
+    color:var(--primary-color);
 }
 
 .container .posts-container .category
@@ -505,7 +512,7 @@ section{
 .container .posts-container .post .text,
 .container-articles .posts-container .post .text
 {
-    color:var(--black);
+    color:var(--primary-color);
     font-size: 1.7rem;
     line-height: 1.7;
     padding: 0.5rem 1rem;
@@ -610,7 +617,7 @@ section{
 }
 
 .container .posts-container .comments input[type='submit']:hover{
-    background-color: var(--black);
+    background-color: var(--primary-color);
     color: #eee;
     font-weight: bold;
 }
@@ -632,7 +639,7 @@ section{
 .container-articles .posts-container .links a i
 {
     padding-right: .2rem;
-    color:var(--black);
+    color:var(--primary-color);
 }
 
 .container .posts-container .links a:hover,
@@ -678,7 +685,7 @@ section{
 }
 
 .container .sidebar .box .about h3{
-    color:var(--black);
+    color:var(--primary-color);
     font-weight: bold;
     font-size: 2rem;
 }
@@ -721,9 +728,9 @@ section{
     height: 4rem;
     line-height: 4rem;
     width: 4rem;
-    border: 1px solid var(--black);
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
-    background:var(--black);
+    background:var(--primary-color);
     color:#fff;
     font-size: 1.7rem;
     margin:0 .1rem;
@@ -731,7 +738,7 @@ section{
 
 .container .sidebar .box .about .follow a:hover{
     background:none;
-    color: var(--black);
+    color: var(--primary-color);
 }
 
 .container .sidebar .box .category{
@@ -741,7 +748,7 @@ section{
 .container .sidebar .box .category a{
     padding:.4rem 0;
     font-size: 1.7rem;
-    color:var(--black);
+    color:var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -768,7 +775,7 @@ section{
 }
 
 .container .sidebar .box .p-post a h3{
-    color:var(--black);
+    color:var(--primary-color);
     font-size: 1.7rem;
     padding-bottom: 1rem;
 }
@@ -794,15 +801,25 @@ section{
     display: inline-block;
     padding:1rem 1.5rem;
     font-size: 1.5rem;
-    color:var(--black);
+    color:var(--primary-color);
     border-radius: .5rem;
     border:var(--border);
     margin:.5rem;
 }
 
 .container .sidebar .box .tags a:hover{
-    background:var(--black);
+    background:var(--primary-color);
     color:#fff;
+}
+
+.blog-page{
+    font-size: 2rem;
+    color: var(--seconde-color);
+    text-align: right;
+}
+
+.blog-page:hover{
+    font-weight: bold;
 }
 
 /* fin de la section blog de la page index  */
@@ -821,12 +838,12 @@ section{
 }
 
 .confiance .content .box .a-apropos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(/images/blog2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(/images/confiance1.jpg);
     background-size: cover;
     display: grid;
     place-items: center;
     padding: 3rem;
-    height: 50vh;
+    height: 40vh;
 }
 
 .confiance .content .box .a-apropos .title{
@@ -904,7 +921,7 @@ section{
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background:var(--black);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.644)),url(../images/newsletter.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -946,22 +963,22 @@ section{
 }
 
 .newsletter form input[type="submit"]{
-    background:var(--seconde-color);
+    background-color: white;
     width:20rem;
     border-radius: 5rem;
     cursor: pointer;
 }
 
 .newsletter form input[type="submit"]:hover{
-    color: var(--black);
-    background-color: white;
+    color: var(--primary-color);
+    background:var(--third-color);
 }
 
 /* fin de la section newsletter pour les promos */
 
 .footer{
     padding-top: 3rem;
-    background: var(--black);
+    background: var(--primary-color);
     background-size: cover;
     background-position: center;
     color: #eee;
@@ -1019,7 +1036,7 @@ section{
     font-weight: normal;
     letter-spacing: .1rem;
     color:#fff;
-    border-top: .1rem solid var(--seconde-color);
+    border-top: .1rem solid var(--third-color);
     padding:2.5rem 1rem;
     text-align: center;
 }
@@ -1048,8 +1065,9 @@ section{
 }
 
 .aproposP .content .box img{
-    width: 40%;
+    width: 25%;
     margin: 0.5rem;
+    border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -1200,7 +1218,7 @@ section{
 }
 
 .formulaire .content form input[type='submit']:hover{
-    background-color: var(--black);
+    background-color: var(--primary-color);
     color: #eee;
     font-weight: bold;
 }
